@@ -53,16 +53,27 @@
 * ======================================================= */
 body {
   font-family: 'Gibson Light', sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
   background: #fff;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Gibson Light', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'Gibson Light', sans-serif;
+}
 
+h1 b, h2 b, h3 b, h5 b, h6 b {
+    font-weight: normal;
+    font-family: 'Gibson SemiBold';
+}
+
+h1 {
+    line-height: 29px;
+    margin-bottom: 20px;
 }
 
 #page {
@@ -104,9 +115,7 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-p {
-  margin-bottom: 20px;
-}
+
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
@@ -333,7 +342,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-hero {
-  min-height: 700px;
+  min-height: 300px;
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-hero .btn {
@@ -355,10 +364,10 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 700px;
+  min-height: 300px;
 }
 #fh5co-hero .flexslider .flex-control-nav {
-  bottom: 40px;
+  /* bottom: 40px; */
   z-index: 1000;
 }
 #fh5co-hero .flexslider .flex-control-nav li a {
@@ -379,6 +388,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   opacity: 0;
   min-height: 700px;
+
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
@@ -386,8 +396,8 @@ h1, h2, h3, h4, h5, h6, figure {
   min-height: 700px;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
-  font-size: 24px;
-  /* font-weight: 400; */
+  font-size: 38px;
+  font-weight: 0;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -459,6 +469,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-counter {
     height: inherit;
     padding: 7em 0;
+
   }
   #fh5co-counter .display-t,
   #fh5co-counter .display-tc {
@@ -592,7 +603,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #000;
+  color: #b76e79;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1062,19 +1073,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  /* margin-bottom: 5em; */
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  /* font-size: 24px;
+  margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #000; */
 }
 .fh5co-heading p {
   font-size: 18px;
@@ -1237,6 +1248,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-footer .copyright .block {
   display: block;
   padding: 1.5rem 0rem;
+  color: #b76e79;
 }
 
 #map {
@@ -1780,7 +1792,33 @@ textarea{
   /* margin: 50px 0px; */
 }
 
+.caro-img{
+  background-image: url('../images/Baby-Esther.jpg');
+  height:56rem;
+  width: 100%;
+  background-size: cover;
 
+}
+
+.brand-brand{
+  margin: 10rem;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-brand{
+    margin: 00rem;
+    background: #fff;
+    background-size: cover;;
+    background-repeat: no-repeat;
+    back
+  }
+}
+
+."container-text{
+  padding: 0;
+  margin: 0;
+}
 /*# sourc
 
 .eMappingURL=style.css.map */

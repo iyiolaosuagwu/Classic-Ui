@@ -1,2 +1,87 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+<div class="" style="background: red;">
+  <aside id="fh5co-hero" class="js-fullheight">
+    <div class="flexslider js-fullheight">
+      <ul class="slides">
+        <li style="background-image: url(images/Baby-Esther.jpg);">
+          <!-- <div class="overlay-gradient"></div> -->
+          <div class="container">
+            <div class="col-md-6  js-fullheight slider-text">
+              <div class="slider-text-inner">
+                <div class="desc">
+
+                  <h2 style="font-family: 'Gibson Light', sans-serif;">WELCOME TO INSPIRED BY KORE</h2>
+                  <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p> -->
+                  <p style="font-style: Italic; font-family: Georgia; color: #fff; font-size: 17px;">We are a proudly Nigerian full service event company based in Lagos, Nigeria. From conceptualisation and vendor selection to on-the-day coordination and management, we pride ourselves in partnering with you to handcraft your most memorable experiences in Nigeria and beyond.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6  js-fullheight slider-text ">
+              <!-- <div class="slider-text-inner">
+                <div class="desc flexslider-11">
+                  <p style="font-style: Italic; font-family: Georgia; color: #777;">We are a proudly Nigerian full service event company based in Lagos, Nigeria. From conceptualisation and vendor selection to on-the-day coordination and management, we pride ourselves in partnering with you to handcraft your most memorable experiences in Nigeria and beyond.</p>
+                </div>
+              </div> -->
+            </div>
+
+          </div>
+        </li>
+        <li style="background-image: url(images/1.jpg);">
+          <div class="container">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+              <div class="slider-text-inner">
+                <div class="desc">
+
+                  <span style="font-size: 20px; font-style: Italic; font-family: Georgia; color: #fff;">Passion and Hard Work that brings Innovative Results</span>
+
+                  <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p> -->
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(images/1.jpg);">
+          <div class="container">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+              <div class="slider-text-inner">
+                <div class="desc">
+                  <span style="font-size: 20px; font-style: Italic; font-family: Georgia; color: #fff;">Breathtaking Designs with a Detailed Approach.</span>
+                  <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p> -->
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(images/1.jpg);">
+          <div class="container">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+              <div class="slider-text-inner">
+                <div class="desc">
+                  <span style="font-size: 20px; font-style: Italic; font-family: Georgia; color: #fff;">As Skilled Professionals, We make it Happen</span>
+                  <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p> -->
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+  </aside>
+</div>
