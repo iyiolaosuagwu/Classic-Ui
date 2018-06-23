@@ -22,7 +22,6 @@ function init() {
     };
 
     
-
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');

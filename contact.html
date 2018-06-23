@@ -62,6 +62,37 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+
+	<script>
+		function _(id){ return document.getElementById(id); }
+		function submitForm(){
+			_("mybtn").disabled = true;
+			_("status").innerHTML = 'please wait ...';
+			var formdata = new FormData();
+			formdata.append( "name", _("name").value );
+			formdata.append( "email", _("email").value );
+			formdata.append( "contact", _("contact").value );
+			formdata.append( "Wdate", _("Wdate").value );
+			formdata.append( "Nguest", _("Nguest").value );
+			formdata.append( "website", _("website").value );
+			formdata.append( "message", _("message").value );
+			
+			var ajax = new XMLHttpRequest();
+			ajax.open( "POST", "contact.php" );
+			ajax.onreadystatechange = function() {
+				if(ajax.readyState == 4 && ajax.status == 200) {
+					if(ajax.responseText == "success"){
+						_("my_form").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent.</h2>';
+					} else {
+						_("status").innerHTML = ajax.responseText;
+						_("mybtn").disabled = false;
+					}
+				}
+			}
+			ajax.send( formdata );
+		}
+	</script>
+
 	</head>
 	<body style="background-image: url('images/gallery-9.jpg'); background-size: cover; background-repeat: no-repeat;">
 
@@ -148,40 +179,40 @@
 							</div>
 							<div class="col-md-5 animate-box">
 								<!-- <h3>Get In Touch</h3> -->
-								<form action="#">
+								<form id="my_form" onsubmit="submitForm(); return false;">
 									<div class="row form-group">
 										<div class="col-md-10">
 											<!-- <label for="fname">First Name</label> -->
-											<input type="text" id="fname" class="form-control" placeholder="Name & Surname">
+											<input id="name" class="form-control" placeholder="Name & Surname">
 										</div>
 									</div>
 
 									<div class="row form-group">
 										<div class="col-md-10">
 											<!-- <label for="email">Email</label> -->
-											<input type="text" id="email" class="form-control" placeholder="Your email address">
+											<input  id="email" class="form-control" placeholder="Your email address">
 										</div>
 									</div>
 
 									<div class="row form-group">
 										<div class="col-md-10">
 											<!-- <label for="email">Email</label> -->
-											<input type="contact" id="email" class="form-control" placeholder="Contact">
+											<input  id="contact" class="form-control" placeholder="Contact">
 										</div>
 									</div>
 
 									<div class="row form-group">
 										<div class="col-md-10">
 											<!-- <label for="email">Email</label> -->
-											<input type="text" id="email" class="form-control" placeholder="Prefered Date and Wedding">
+											<input id="Wdate" class="form-control" placeholder="Prefered Date and Wedding">
 										</div>
 									</div>
 
 									<div class="row form-group">
 										<div class="col-md-10">
 											<!-- <label for="email">Email</label> -->
-											<!-- <input type="text" id="email" class="form-control" placeholder="Number of guest"> -->
-											<select class="form-control" name="">
+											<!-- <input id="email" class="form-control" placeholder="Number of guest"> -->
+											<select class="form-control" name="" id="Nguest">
 												<option class="option" value="Number of guest">Number of guest</option>
 												<option value="">50</option>
 												<option value="">100</option>
@@ -193,7 +224,7 @@
 									<div class="row form-group">
 										<div class="col-md-10">
 											<!-- <label for="email">Email</label> -->
-											<input type="text" id="email" class="form-control" placeholder="Your Website">
+											<input id="website" class="form-control" placeholder="Your Website">
 										</div>
 									</div>
 
@@ -201,16 +232,16 @@
 									<div class="row form-group">
 										<div class="col-md-10">
 											<!-- <label for="message">Message</label> -->
-											<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+											<textarea id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
 										</div>
 									</div>
 
 									<div class="row form-group">
 										<div class="col-md-10">
-											<input type="submit" value="Send Message" class="btn btn-primary">
+											<input id="mybtn" value="Send Message" class="btn btn-primary">
 										</div>
 									</div>
-
+									<span id="status"></span></p>
 								</form>
 							</div>
 						</div>
@@ -238,9 +269,9 @@
 						<p>
 							<ul class="fh5co-social-icons">
 								<li><a href="#"><i class="icon-instagram"></i></a></li>
-								<!-- <li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li> -->
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-pinterest"></i></a></li>
+								<!-- <li><a href="#"><i class="icon-dribbble"></i></a></li> -->
 							</ul>
 						</p>
 					</div>
